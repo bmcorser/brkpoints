@@ -7,12 +7,19 @@ Output: de-duplicated csv file of most likely fragile site locations"""
 
 ####################################################
 # Modules
-import optparse
-import subprocess
 import csv
+import optparse
+import os
+import subprocess
+
 from Bio.Blast import NCBIXML
 
 ####################################################
+# where the local biodata lives on the host system
+BIODATA = os.environ('BIODATA', '/opt/biodata')
+DEFAULT_DB = '/usr/local/share/Blast/db/human_genomic'
+
+
 # Functions
 def parse_ticdb_file(ticdb_file):
     """Parse tab-delimited TICdb file and convert into fasta format
@@ -27,15 +34,17 @@ def parse_ticdb_file(ticdb_file):
     f.write('\n'.join(i for i in fasta))
     f.close()
 
-def blast_seqs(input_fastafile, outfile_xml):
+
+def blast_seqs(input_fastafile, outfile_xml, db_path=DEFAULT_DB):
     """Run nucleotide Blast on fasta entries and output as XML, used blast
     to get best alignments rather than relying on perfect alignments or
     allowing for mismatches using BWA. Search returns 100 alignments, which
     should be sufficient to cover both sides of translocation junction"""
     # if running on a local server:
     subprocess.call(['blastn', '-query', input_fastafile, '-db',
-                     '/usr/local/share/Blast/db/human_genomic', '-outfmt', '5',
+                     db_path, '-outfmt', '5',
                      '-out', outfile_xml, '-num_alignments', '100'])
+
 
 def parse_blast(blast_xml_file):
     """Parse BLAST XML output and compile relevant information. Query and
@@ -109,6 +118,7 @@ def parse_blast(blast_xml_file):
                                            fragment[7], fragment[6], -1])
     return fragiles
 
+
 def remove_duplicates(fragile_list, distance):
     """Remove duplicated sites from list, which are defined by sites
     that are located less than the specified distance in kb apart,
@@ -137,7 +147,7 @@ def remove_duplicates(fragile_list, distance):
             # j = same sites as i to compare each site to i
             # add to positions list if midpoint of j is less than Xbp from i
             # if duplicates are found they will make identical lists for each
-            # site in i 
+            # site in i
             positions = [j for j in by_chr[chr] if
                      (int(i[2])+int(i[3]))/2 >= (int(j[2])+int(j[3]))/2 - X and
                       (int(i[2])+int(i[3]))/2 <= (int(j[2])+int(j[3]))/2 + X]
@@ -165,6 +175,7 @@ def remove_duplicates(fragile_list, distance):
             no_dup[site[1]] = site
     return no_dup
 
+
 def write_csv(fragile_dict, out_file):
     """Output fragile sites dictionary to csv file with header. Each unique
     fragile site is given a name, details of original sites that localise to
@@ -177,24 +188,14 @@ def write_csv(fragile_dict, out_file):
                             fragile_dict[i][2], fragile_dict[i][3],
                             fragile_dict[i][4], fragile_dict[i][5]]
                             for i in fragile_dict])
-####################################################
-# Main
-if __name__ == '__main__':
-    # parse object for managing input options
-    parser = optparse.OptionParser()
 
-    # essential data, defines commandline options
-    parser.add_option('-t', dest='ticdb_file', default='',
-                       help="This input is the tab-delimited \
-                                TICdb output file.")
-    parser.add_option('-d', dest='distance', default='100',
-                       help="This input is the threshold distance in kb \
-                       to determine if two fragile sites are from the same \
-                       fragile region.")
-    parser.add_option('-o', dest='out_file', default='Fragile_Sites.csv',
-                       help="This input is the name of the .csv \
-                               output file.")
-    # load inputs
+
+def main(parser):
+    """Parse a file of translocations, split the translocations into putative
+    fragile sites and map the fragile sites to the genome. Output the resulting
+    de-duplicated list to a csv file.
+    """
+
     (options, args) = parser.parse_args()
     # reads the inputs from commandline
     ticdb_file = options.ticdb_file
@@ -210,3 +211,28 @@ if __name__ == '__main__':
     no_dup = remove_duplicates(fragiles, distance)
     # write to .csv
     write_csv(no_dup, out_file)
+
+
+####################################################
+# Main
+if __name__ == '__main__':
+    # parse object for managing input options
+    parser = optparse.OptionParser()
+
+    # essential data, defines commandline options
+    parser.add_option('-t', dest='ticdb_file', default='',
+                      help="This input is the tab-delimited TICdb output file.")
+
+    parser.add_option('-d', dest='distance', default='100',
+                       help="This input is the threshold distance in kb \
+                       to determine if two fragile sites are from the same \
+                       fragile region.")
+
+    parser.add_option('--genome', dest='blasdb', default=DEFAULT_DB,
+                      help="Path to the blast genome database to search")
+
+    parser.add_option('-o', dest='out_file', default='Fragile_Sites.csv',
+                      help="This input is the name of the .csv output file.")
+
+    main(parser)  # pass the options in
+
