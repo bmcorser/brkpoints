@@ -4,6 +4,9 @@
 This is a "real" Readme file.
 
 ## Installation
+1. Make a virtual environment (checkout virtualenvwrapper)
+
+2. ```python setup.py develop```
 
 ### Dependencies
 The following dependencies are required:
@@ -23,3 +26,7 @@ Is "human_genomic" the same as GRCh38 or are there subtle differences?
 ## Usage
 
 Document how to use the script here.
+
+Run the test suite with
+
+```py.test tests```

@@ -190,21 +190,16 @@ def write_csv(fragile_dict, out_file):
                             for i in fragile_dict])
 
 
-def main(parser):
+def main(ticdb_file, out_file='Fragile_Sites.csv',
+         distance=100, blast_db=DEFAULT_DB):
     """Parse a file of translocations, split the translocations into putative
     fragile sites and map the fragile sites to the genome. Output the resulting
     de-duplicated list to a csv file.
     """
-
-    (options, args) = parser.parse_args()
-    # reads the inputs from commandline
-    ticdb_file = options.ticdb_file
-    out_file = options.out_file
-    distance = options.distance
     # Parse input data
     parse_ticdb_file(ticdb_file)
     # Run BLAST
-    blast_seqs('TIC.fasta', 'TICdb_BLASTout.xml')
+    blast_seqs('TIC.fasta', 'TICdb_BLASTout.xml', blast_db)
     # Parse BLAST output
     fragiles = parse_blast('TICdb_BLASTout.xml')
     # remove duplicates
@@ -228,11 +223,14 @@ if __name__ == '__main__':
                        to determine if two fragile sites are from the same \
                        fragile region.")
 
-    parser.add_option('--genome', dest='blasdb', default=DEFAULT_DB,
+    parser.add_option('--genome', dest='blastdb', default=DEFAULT_DB,
                       help="Path to the blast genome database to search")
 
     parser.add_option('-o', dest='out_file', default='Fragile_Sites.csv',
                       help="This input is the name of the .csv output file.")
+    (options, args) = parser.parse_args()
 
-    main(parser)  # pass the options in
-
+    main(options.ticdb_file,
+         options.out_file,
+         options.distance,
+         options.blastdb)

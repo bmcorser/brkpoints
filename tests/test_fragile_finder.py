@@ -1,25 +1,28 @@
-from nose.tools import *
-from brkpoints import main
+"""
+Test of the fragile finder
+"""
 
-OUTER_TODAY = None
+import pytest
+import mock
 
+import fragile_finder
 
-def setup():
-    'Setup function that runs before every test'
-    print "SETUP!"
+@pytest.fixture
+def input_file():
+    """A mock input file of translocation sites"""
 
+@pytest.fixture
+def output_file():
+    """A file like object I can write to and assert against"""
 
-def teardown():
-    'Teardown function that runs after every test'
-    print "TEAR DOWN!"
+@pytest.fixture
+def mock_blast_search(request):
+    """A fake function we will call instead of the real blast query that
+    will return known data"""
 
-
-def test_basic():
-    'Test functions must start with test_*'
-    print "BASIC TEST!"
-
-
-def test_main():
-    'Call the "main" function'
-    main()
-    print "MAIN TEST!"
+@pytest.mark.usefixtures('mock_blast_search')
+def test_main(input_file, output_file):
+    fragile_finder.main(input_file, output_file, 100)
+    output_file.seek()
+    results = output_file.readlines()
+    assert len(results) > 0  # make more specific
