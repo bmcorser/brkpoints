@@ -1,0 +1,932 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastn</BlastOutput_program>
+  <BlastOutput_version>BLASTN 2.2.28+</BlastOutput_version>
+  <BlastOutput_reference>Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), &quot;A greedy algorithm for aligning DNA sequences&quot;, J Comput Biol 2000; 7(1-2):203-14.</BlastOutput_reference>
+  <BlastOutput_db>/usr/local/share/Blast/db/human_genomic</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>CBFB_MYH11_AF249897</BlastOutput_query-def>
+  <BlastOutput_query-len>152</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_sc-match>1</Parameters_sc-match>
+      <Parameters_sc-mismatch>-2</Parameters_sc-mismatch>
+      <Parameters_gap-open>0</Parameters_gap-open>
+      <Parameters_gap-extend>0</Parameters_gap-extend>
+      <Parameters_filter>L;m;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>CBFB_MYH11_AF249897</Iteration_query-def>
+  <Iteration_query-len>152</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|568815582|ref|NC_000016.10|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, GRCh38 Primary Assembly &gt;gi|568336008|gb|CM000678.2| Homo sapiens chromosome 16, GRCh38 reference primary assembly</Hit_def>
+  <Hit_accession>NC_000016</Hit_accession>
+  <Hit_len>90338345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>15724994</Hsp_hit-from>
+      <Hsp_hit-to>15724887</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>67082267</Hsp_hit-from>
+      <Hsp_hit-to>67082308</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|568815402|ref|NT_187607.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16 genomic scaffold, GRCh38 alternate locus group ALT_REF_LOCI_1 HSCHR16_1_CTG1 &gt;gi|568335827|gb|KI270853.1| Homo sapiens chromosome 16 genomic contig, GRCh38 reference assembly alternate locus group ALT_REF_LOCI_1</Hit_def>
+  <Hit_accession>NT_187607</Hit_accession>
+  <Hit_len>2659700</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>1383005</Hsp_hit-from>
+      <Hsp_hit-to>1382898</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|568802198|ref|NT_010393.17|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16 genomic scaffold, GRCh38 Primary Assembly HSCHR16_CTG1 &gt;gi|568335638|gb|GL000124.2| Homo sapiens chromosome 16 genomic contig, GRCh38 reference primary assembly</Hit_def>
+  <Hit_accession>NT_010393</Hit_accession>
+  <Hit_len>18426486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>15714994</Hsp_hit-from>
+      <Hsp_hit-to>15714887</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|528476567|ref|NC_018927.2|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, alternate assembly CHM1_1.1, whole genome shotgun sequence &gt;gi|512322321|gb|CM001624.2| Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NC_018927</Hit_accession>
+  <Hit_len>91765909</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>15903231</Hsp_hit-from>
+      <Hsp_hit-to>15903124</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>68523148</Hsp_hit-from>
+      <Hsp_hit-to>68523189</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|528473581|ref|NW_004929400.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16 genomic scaffold, alternate assembly CHM1_1.1, whole genome shotgun sequence &gt;gi|512214376|gb|KE150184.1| Homo sapiens chromosome 16 genomic scaffold, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NW_004929400</Hit_accession>
+  <Hit_len>35303878</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>15843231</Hsp_hit-from>
+      <Hsp_hit-to>15843124</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|206583724|gb|CM000506.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>CM000506</Hit_accession>
+  <Hit_len>75878238</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>15212135</Hsp_hit-from>
+      <Hsp_hit-to>15212028</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>52990867</Hsp_hit-from>
+      <Hsp_hit-to>52990908</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|42412600|gb|CH003511.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>CH003511</Hit_accession>
+  <Hit_len>75180861</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>15482896</Hsp_hit-from>
+      <Hsp_hit-to>15482789</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|42412550|gb|CH003463.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>CH003463</Hit_accession>
+  <Hit_len>71618388</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>15833364</Hsp_hit-from>
+      <Hsp_hit-to>15833471</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>48281541</Hsp_hit-from>
+      <Hsp_hit-to>48281582</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|157713457|ref|AC_000148.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, alternate assembly HuRef, whole genome shotgun sequence &gt;gi|157501111|gb|CM000477.1| Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>AC_000148</Hit_accession>
+  <Hit_len>75877710</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>15212283</Hsp_hit-from>
+      <Hsp_hit-to>15212176</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>52990173</Hsp_hit-from>
+      <Hsp_hit-to>52990214</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|74273666|gb|CM000267.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>CM000267</Hit_accession>
+  <Hit_len>75226909</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>200.558</Hsp_bit-score>
+      <Hsp_score>108</Hsp_score>
+      <Hsp_evalue>2.07648e-48</Hsp_evalue>
+      <Hsp_query-from>41</Hsp_query-from>
+      <Hsp_query-to>148</Hsp_query-to>
+      <Hsp_hit-from>15499337</Hsp_hit-from>
+      <Hsp_hit-to>15499230</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>108</Hsp_align-len>
+      <Hsp_qseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_qseq>
+      <Hsp_hseq>AGAATGAAGTTGAGAGCGTCACAGGGATGCTTAACGAGGCCGAGGGGAAGGCCATTAAGCTGGCCAAGGACGTGGCGTCCCTCAGTTCCCAGCTCCAGGACACCCAGG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>51624429</Hsp_hit-from>
+      <Hsp_hit-to>51624470</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|568802190|ref|NT_010498.16|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16 genomic scaffold, GRCh38 Primary Assembly HSCHR16_CTG3_1 &gt;gi|568335630|gb|GL000126.2| Homo sapiens chromosome 16 genomic contig, GRCh38 reference primary assembly</Hit_def>
+  <Hit_accession>NT_010498</Hit_accession>
+  <Hit_len>43847663</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>20701585</Hsp_hit-from>
+      <Hsp_hit-to>20701626</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|528473446|ref|NW_004929402.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16 genomic scaffold, alternate assembly CHM1_1.1, whole genome shotgun sequence &gt;gi|512214365|gb|KE150186.1| Homo sapiens chromosome 16 genomic scaffold, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NW_004929402</Hit_accession>
+  <Hit_len>42007949</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>20730440</Hsp_hit-from>
+      <Hsp_hit-to>20730481</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|511343540|gb|KE141322.1|</Hit_id>
+  <Hit_def>Homo sapiens unplaced genomic scaffold scaffold261, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>KE141322</Hit_accession>
+  <Hit_len>10336349</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>7365375</Hsp_hit-from>
+      <Hsp_hit-to>7365416</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|317021825|gb|GL583148.1|</Hit_id>
+  <Hit_def>Homo sapiens unplaced genomic scaffold scaffold_168, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>GL583148</Hit_accession>
+  <Hit_len>4820063</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>1960210</Hsp_hit-from>
+      <Hsp_hit-to>1960251</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|202078559|gb|DS990710.1|</Hit_id>
+  <Hit_def>Homo sapiens SCAF_1112675837089 genomic scaffold, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>DS990710</Hit_accession>
+  <Hit_len>14146129</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>11277131</Hsp_hit-from>
+      <Hsp_hit-to>11277172</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|71516170|gb|CH471092.1|</Hit_id>
+  <Hit_def>Homo sapiens 211000035837073 genomic scaffold, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>CH471092</Hit_accession>
+  <Hit_len>23685799</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>20689228</Hsp_hit-from>
+      <Hsp_hit-to>20689269</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|157697691|ref|NW_001838290.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16 genomic scaffold, alternate assembly HuRef SCAF_1103279188144, whole genome shotgun sequence &gt;gi|157399242|gb|DS486072.1| Homo sapiens SCAF_1103279188144 genomic scaffold, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NW_001838290</Hit_accession>
+  <Hit_len>14146010</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>78.6796</Hsp_bit-score>
+      <Hsp_score>42</Hsp_score>
+      <Hsp_evalue>1.01514e-11</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>42</Hsp_query-to>
+      <Hsp_hit-from>11277078</Hsp_hit-from>
+      <Hsp_hit-to>11277119</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>42</Hsp_identity>
+      <Hsp_positive>42</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>42</Hsp_align-len>
+      <Hsp_qseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_qseq>
+      <Hsp_hseq>GAATTTGAAGATAGAGACAGGTCTCATCGGGAGGAAATGGAG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>1920</Statistics_db-num>
+      <Statistics_db-len>40611932764</Statistics_db-len>
+      <Statistics_hsp-len>31</Statistics_hsp-len>
+      <Statistics_eff-space>4914036662524</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+<Iteration>
+  <Iteration_iter-num>2</Iteration_iter-num>
+  <Iteration_query-ID>Query_2</Iteration_query-ID>
+  <Iteration_query-def>CBFB_MYH11_AF390860</Iteration_query-def>
+  <Iteration_query-len>92</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|568815582|ref|NC_000016.10|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, GRCh38 Primary Assembly &gt;gi|568336008|gb|CM000678.2| Homo sapiens chromosome 16, GRCh38 reference primary assembly</Hit_def>
+  <Hit_accession>NC_000016</Hit_accession>
+  <Hit_len>90338345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>15721635</Hsp_hit-from>
+      <Hsp_hit-to>15721592</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|568815402|ref|NT_187607.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16 genomic scaffold, GRCh38 alternate locus group ALT_REF_LOCI_1 HSCHR16_1_CTG1 &gt;gi|568335827|gb|KI270853.1| Homo sapiens chromosome 16 genomic contig, GRCh38 reference assembly alternate locus group ALT_REF_LOCI_1</Hit_def>
+  <Hit_accession>NT_187607</Hit_accession>
+  <Hit_len>2659700</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>1379646</Hsp_hit-from>
+      <Hsp_hit-to>1379603</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|568802198|ref|NT_010393.17|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16 genomic scaffold, GRCh38 Primary Assembly HSCHR16_CTG1 &gt;gi|568335638|gb|GL000124.2| Homo sapiens chromosome 16 genomic contig, GRCh38 reference primary assembly</Hit_def>
+  <Hit_accession>NT_010393</Hit_accession>
+  <Hit_len>18426486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>15711635</Hsp_hit-from>
+      <Hsp_hit-to>15711592</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|528476567|ref|NC_018927.2|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, alternate assembly CHM1_1.1, whole genome shotgun sequence &gt;gi|512322321|gb|CM001624.2| Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NC_018927</Hit_accession>
+  <Hit_len>91765909</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>15899872</Hsp_hit-from>
+      <Hsp_hit-to>15899829</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|528473581|ref|NW_004929400.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16 genomic scaffold, alternate assembly CHM1_1.1, whole genome shotgun sequence &gt;gi|512214376|gb|KE150184.1| Homo sapiens chromosome 16 genomic scaffold, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>NW_004929400</Hit_accession>
+  <Hit_len>35303878</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>15839872</Hsp_hit-from>
+      <Hsp_hit-to>15839829</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|206583724|gb|CM000506.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>CM000506</Hit_accession>
+  <Hit_len>75878238</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>15208776</Hsp_hit-from>
+      <Hsp_hit-to>15208733</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|42412600|gb|CH003511.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>CH003511</Hit_accession>
+  <Hit_len>75180861</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>15479537</Hsp_hit-from>
+      <Hsp_hit-to>15479494</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|42412550|gb|CH003463.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>CH003463</Hit_accession>
+  <Hit_len>71618388</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>15836723</Hsp_hit-from>
+      <Hsp_hit-to>15836766</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|157713457|ref|AC_000148.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, alternate assembly HuRef, whole genome shotgun sequence &gt;gi|157501111|gb|CM000477.1| Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>AC_000148</Hit_accession>
+  <Hit_len>75877710</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>15208924</Hsp_hit-from>
+      <Hsp_hit-to>15208881</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|74273666|gb|CM000267.1|</Hit_id>
+  <Hit_def>Homo sapiens chromosome 16, whole genome shotgun sequence</Hit_def>
+  <Hit_accession>CM000267</Hit_accession>
+  <Hit_len>75226909</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>82.3729</Hsp_bit-score>
+      <Hsp_score>44</Hsp_score>
+      <Hsp_evalue>4.02103e-13</Hsp_evalue>
+      <Hsp_query-from>49</Hsp_query-from>
+      <Hsp_query-to>92</Hsp_query-to>
+      <Hsp_hit-from>15495978</Hsp_hit-from>
+      <Hsp_hit-to>15495935</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>-1</Hsp_hit-frame>
+      <Hsp_identity>44</Hsp_identity>
+      <Hsp_positive>44</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>44</Hsp_align-len>
+      <Hsp_qseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_qseq>
+      <Hsp_hseq>GTTGTTAGCCGAGGAGAAAAACATCTCTTCCAAATACGCGGATG</Hsp_hseq>
+      <Hsp_midline>||||||||||||||||||||||||||||||||||||||||||||</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>1920</Statistics_db-num>
+      <Statistics_db-len>40611932764</Statistics_db-len>
+      <Statistics_hsp-len>30</Statistics_hsp-len>
+      <Statistics_eff-space>2517936260168</Statistics_eff-space>
+      <Statistics_kappa>0.46</Statistics_kappa>
+      <Statistics_lambda>1.28</Statistics_lambda>
+      <Statistics_entropy>0.85</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
