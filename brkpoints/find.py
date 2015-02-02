@@ -36,10 +36,10 @@ import os
 import shutil
 import yaml
 import subprocess
-import optparse
 
 
 def usage():
+    """ Return usage """
     return (
         "Usage: {prog} " +
         "<translocations_file> " +
@@ -234,7 +234,7 @@ def locate_breakpoints(translocation, transcripts, workdir,
             continue
 
         # TODO - add logic here to detect whether the alignment break
-        # is within an intron or close to an exon/intron boundary; 
+        # is within an intron or close to an exon/intron boundary;
         # identify a fragile site region that reflects the associated
         # uncertainty.
 
@@ -283,7 +283,7 @@ def main(args=None):
     if not args and len(sys.argv) > 1:
         args = sys.argv[1:]
 
-    if len(args) != 6:
+    if not args or len(args) != 6:
         print usage()
         sys.exit(1)
 

@@ -27,10 +27,10 @@ to data in the output details_file.
 import sys
 import os
 import yaml
-from optparse import OptionParser
 
 
 def usage():
+    """ Return usage """
     return (
         "Usage: {prog} " +
         "<transcripts_file> " +
@@ -268,7 +268,7 @@ def main(args=None):
     if not args and len(sys.argv) > 1:
         args = sys.argv[1:]
 
-    if len(args) != 3:
+    if not args or len(args) != 3:
         print usage()
         sys.exit(1)
 
