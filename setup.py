@@ -5,16 +5,20 @@ except ImportError:
     from distutils.core import setup
 
 config = {
-    'description': 'My Project',
-    'author': 'My Name',
-    'url': 'URL to get it at.',
-    'download_url': 'Where to download it.',
-    'author_email': 'My email.',
     'version': '0.1',
-    'install_requires': ['nose'],
+    'description': 'Fragile Site Finder',
+    'author': 'mc',
+    'install_requires': ['nose','PyYAML'],
     'packages': ['brkpoints'],
     'scripts': [],
-    'name': 'projectname'
+    'name': 'brkpoints',
+    'package_data': {'tests': ['data/*'],},
+    'entry_points': {
+        'console_scripts': [
+            'brkpoints-prepare = brkpoints.prepare:main',
+            'brkpoints-find = brkpoints.find:main',
+            ],
+        },
 }
 
 setup(**config)
