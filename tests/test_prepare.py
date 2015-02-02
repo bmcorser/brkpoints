@@ -22,7 +22,7 @@ def teardown():
 
 
 def test_start_position():
-    'Test start_position'
+    'Test prepare.start_position'
     test_value = 99
     component = {'start_position': test_value}
     assert_equal(start_position(component), test_value)
@@ -44,7 +44,7 @@ def compare_transcript_details(obtained, expected):
 
 
 def test_split_transcript():
-    'Test split_transcript'
+    'Test prepare.split_transcript'
     # Work area
     workdir = tempfile.mkdtemp()
     # Open handle to sequence file
@@ -115,7 +115,7 @@ def test_split_transcript():
 
 
 def test_main():
-    'Test main'
+    'Test prepare.main'
     # Work area
     workdir = tempfile.mkdtemp()
     # Input file

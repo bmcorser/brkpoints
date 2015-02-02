@@ -49,7 +49,7 @@ def compare_translocations(obtained, expected):
 
 
 def test_parse_translocations_file():
-    'Test parse_translocations_file'
+    'Test find.parse_translocations_file'
     # Input files
     translocations_file = resource_filename(
         __name__,
@@ -74,7 +74,7 @@ def test_parse_translocations_file():
 
 
 def test_main():
-    'Test main'
+    'Test find.main'
     # Work area
     workdir = tempfile.mkdtemp()
     # Input files
