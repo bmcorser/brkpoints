@@ -1,0 +1,300 @@
+- junction_sequence: ctgtgtcacaccaccttagcctcttgatcgaggaagTGCCTATGATCAGAAGCCACAAGTGGGAATGAGGC
+  partners:
+  - aln: {breakpoint: 222900780, chromosome_name: '2', end_position: 222900780, query_end: 36,
+      query_start: 1, start_position: 222900745, strand: 1}
+    disp: 5prime
+    hgnc_symbol: ACSL3
+  - aln: {breakpoint: 13935898, chromosome_name: '7', end_position: 13935898, query_end: 71,
+      query_start: 35, start_position: 13935862, strand: -1}
+    disp: 3prime
+    hgnc_symbol: ETV1
+  xref: '18594527'
+- junction_sequence: AAAAGGAACGGGAGCTGAGAGcatcacagaggaagtagactgatattaac
+  partners:
+  - aln: {breakpoint: 100142484, chromosome_name: '2', end_position: 100142504, query_end: 21,
+      query_start: 1, start_position: 100142484, strand: -1}
+    disp: 5prime
+    hgnc_symbol: AFF3
+  - aln: {breakpoint: 63318954, chromosome_name: '18', end_position: 63318954, query_end: 50,
+      query_start: 20, start_position: 63318924, strand: -1}
+    disp: 3prime
+    hgnc_symbol: BCL2
+  xref: '18622426'
+- junction_sequence: agtcaagatgcccgaggGccccaaattctcaccagtccgtctccttcaaa
+  partners:
+  - {disp: 5prime, hgnc_symbol: AGTRAP}
+  - aln: {breakpoint: 140794467, chromosome_name: '7', end_position: 140794467, query_end: 50,
+      query_start: 18, start_position: 140794435, strand: -1}
+    disp: 3prime
+    hgnc_symbol: BRAF
+  xref: '20526349'
+- junction_sequence: aactgcatggaaaacccaattactcagcagGaatgattggtaacagtgcttctcggcctacta
+  partners:
+  - aln: {breakpoint: 432525, chromosome_name: '5', end_position: 432525, query_end: 31,
+      query_start: 1, start_position: 432495, strand: 1}
+    disp: 5prime
+    hgnc_symbol: AHRR
+  - aln: {breakpoint: 70141399, chromosome_name: '8', end_position: 70141399, query_end: 63,
+      query_start: 31, start_position: 70141367, strand: -1}
+    disp: 3prime
+    hgnc_symbol: NCOA2
+  xref: '22337624'
+- junction_sequence: agggaacagtagcacagGaaggagcagcagagagagcggcg
+  partners:
+  - aln: {breakpoint: 432829, chromosome_name: '5', end_position: 432829, query_end: 41,
+      query_start: 14, start_position: 432802, strand: 1}
+    disp: 5prime
+    hgnc_symbol: AHRR
+  - {disp: 3prime, hgnc_symbol: NCOA2}
+  xref: '22337624'
+- junction_sequence: gacaccgcagccaccgcggatgcaaaGcagccatttggcagttctccagatgacttgct
+  partners:
+  - aln: {breakpoint: 428006, chromosome_name: '5', end_position: 428006, query_end: 26,
+      query_start: 1, start_position: 427981, strand: 1}
+    disp: 5prime
+    hgnc_symbol: AHRR
+  - aln: {breakpoint: 70132002, chromosome_name: '8', end_position: 70132002, query_end: 59,
+      query_start: 27, start_position: 70131970, strand: -1}
+    disp: 3prime
+    hgnc_symbol: NCOA2
+  xref: '22337624'
+- junction_sequence: tcttttgccagccaaaacagAgtaaaagccaccaccagtctgtgcg
+  partners:
+  - aln: {breakpoint: 432488, chromosome_name: '5', end_position: 432488, query_end: 46,
+      query_start: 17, start_position: 432459, strand: 1}
+    disp: 5prime
+    hgnc_symbol: AHRR
+  - aln: {breakpoint: 70138222, chromosome_name: '8', end_position: 70138222, query_end: 20,
+      query_start: 1, start_position: 70138203, strand: -1}
+    disp: 3prime
+    hgnc_symbol: NCOA2
+  xref: '22337624'
+- junction_sequence: aggaggttacacaagggtgtTgtttcccccgtg
+  partners:
+  - aln: {breakpoint: 29266949, chromosome_name: '2', end_position: 29266968, query_end: 20,
+      query_start: 1, start_position: 29266949, strand: -1}
+    disp: 5prime
+    hgnc_symbol: ALK
+  - aln: {breakpoint: 109462850, chromosome_name: '9', end_position: 109462850, query_end: 33,
+      query_start: 13, start_position: 109462830, strand: -1}
+    disp: 3prime
+    hgnc_symbol: PTPN3
+  xref: '22334442'
+- junction_sequence: accacaggactgcagctccccagcacgCccgtggaccgggag
+  partners:
+  - {disp: 5prime, hgnc_symbol: ASPSCR1}
+  - aln: {breakpoint: 49038036, chromosome_name: X, end_position: 49038036, query_end: 27,
+      query_start: 1, start_position: 49038010, strand: -1}
+    disp: 3prime
+    hgnc_symbol: TFE3
+  xref: '11438465'
+- junction_sequence: cacctgcagcaggcgcgccggcagcagCccgtggaccgggag
+  partners:
+  - {disp: 5prime, hgnc_symbol: ASPSCR1}
+  - aln: {breakpoint: 49038409, chromosome_name: X, end_position: 49038409, query_end: 27,
+      query_start: 1, start_position: 49038383, strand: -1}
+    disp: 3prime
+    hgnc_symbol: TFE3
+  xref: '11438465'
+- junction_sequence: AAGAAGTCCAAGTCGGGCCAGGATCCCCAGCAGGAGCAGGAGCAGGAGCGGGAGCGGGATCCCCAGCAGGAGCAGGAGCGGGAGCGGATTGATGATGTCATTGATGAGATCATCAGCCTGGAGTCCAGTTACAATGATGAAATGCTCAGCTATCTGCCCGGAGGCACCACAGGACTG
+  partners:
+  - aln: {breakpoint: 81996846, chromosome_name: '17', end_position: 81996846, query_end: 87,
+      query_start: 1, start_position: 81996760, strand: 1}
+    disp: 5prime
+    hgnc_symbol: ASPSCR1
+  - aln: {breakpoint: 49038114, chromosome_name: X, end_position: 49038114, query_end: 177,
+      query_start: 88, start_position: 49038025, strand: -1}
+    disp: 3prime
+    hgnc_symbol: TFE3
+  xref: '17149613'
+- junction_sequence: AAGAAGTCCAAGTCGGGCCAGGATCCCCAGCAGGAGCAGGAGCAGGAGCGGGAGCGGGATCCCCAGCAGGAGCAGGAGCGGGAGCGGCTGCCTGTGTCAGGGAATCTGCTTGATGTGTACAGTAGTCAAGGCGTGGCCACACCAGCCATCACTGTCAGCAACTCCTGCCCAGCTGAGCTGCCCAACATCAAACGG
+  partners:
+  - aln: {breakpoint: 81996846, chromosome_name: '17', end_position: 81996846, query_end: 87,
+      query_start: 1, start_position: 81996760, strand: 1}
+    disp: 5prime
+    hgnc_symbol: ASPSCR1
+  - aln: {breakpoint: 49034251, chromosome_name: X, end_position: 49034251, query_end: 195,
+      query_start: 88, start_position: 49034144, strand: -1}
+    disp: 3prime
+    hgnc_symbol: TFE3
+  xref: '17149613'
+- junction_sequence: AAGAAGTCCAAGTCGGGCCAGGATCCCCAGCAGGAGCAGGAGCAGGAGCGGGAGCGGGATCCCCAGCAGGAGCAGGAGCGGGAGCGGCTGCCTGTGTCAGGGAATCTGCTTGATGTGTACAGTAGTCAAGGCGTGGCCACACCAGCCATCACTGTCAGCAACTCCTGCCCAGCTGAGCTGCCCAACATCAAACGG
+  partners:
+  - aln: {breakpoint: 81996846, chromosome_name: '17', end_position: 81996846, query_end: 87,
+      query_start: 1, start_position: 81996760, strand: 1}
+    disp: 5prime
+    hgnc_symbol: ASPSCR1
+  - aln: {breakpoint: 49034251, chromosome_name: X, end_position: 49034251, query_end: 195,
+      query_start: 88, start_position: 49034144, strand: -1}
+    disp: 3prime
+    hgnc_symbol: TFE3
+  xref: AY034077
+- junction_sequence: AAGAAGTCCAAGTCGGGCCAGGATCCCCAGCAGGAGCAGGAGCAGGAGCGGGAGCGGGATCCCCAGCAGGAGCAGGAGCGGGAGCGGATTGATGATGTCATTGATGAGATCATCAGCCTGGAGTCCAGTTACAATGATGAAATGCTCAGCTATCTGCCCGGAGGCACCACAGGACTGCAGCTCCCCAGCACGCTGCCTGTGTCAGGGAATCTGCTTGATGTGTACAGTAGTCAAGGCGTGGCCACACCAGCCATCACTGTCAGCAACTCCTGCCCAGCTGAGCTGCCCAACATCAAACGG
+  partners:
+  - aln: {breakpoint: 81996846, chromosome_name: '17', end_position: 81996846, query_end: 87,
+      query_start: 1, start_position: 81996760, strand: 1}
+    disp: 5prime
+    hgnc_symbol: ASPSCR1
+  - aln: {breakpoint: 49034251, chromosome_name: X, end_position: 49034251, query_end: 300,
+      query_start: 193, start_position: 49034144, strand: -1}
+    disp: 3prime
+    hgnc_symbol: TFE3
+  xref: AY034078
+- junction_sequence: aacaaggacaggggtcttcggagtCctgaactcagaagcccttcagcggccagtagc
+  partners:
+  - {disp: 5prime, hgnc_symbol: BCR}
+  - aln: {breakpoint: 130854064, chromosome_name: '9', end_position: 130854085, query_end: 57,
+      query_start: 36, start_position: 130854064, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: '17268511'
+- junction_sequence: aacaaggacaggggtcttcggagtCctgaactcaggtgatcca
+  partners:
+  - {disp: 5prime, hgnc_symbol: BCR}
+  - aln: {breakpoint: 130853639, chromosome_name: '9', end_position: 130853658, query_end: 43,
+      query_start: 24, start_position: 130853639, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: '17268511'
+- junction_sequence: ATGATGAGTCTCCGGGGCTCTATGGGTTTCTGAATGTCATCGTCCACTCAGCCACTGGATTTAAGCAGAGTTCAAGTAAGTACTGGTTTGCCCTTTCTCTTCCAGAAGCCCTTCAGCGGCCAGTAGCATCTGACTTTGAGCCTCAGGGTCTGAGTGAAGC
+  partners:
+  - aln: {breakpoint: 23290428, chromosome_name: '22', end_position: 23290428, query_end: 90,
+      query_start: 1, start_position: 23290339, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130854064, chromosome_name: '9', end_position: 130854118, query_end: 160,
+      query_start: 106, start_position: 130854064, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: AH001427
+- junction_sequence: TGACCATCAATAAGGAAGATGATGAGTCTCCGGGGCTCTATGGGTTTCTGAATGTCATCGTCCACTCAGCCACTGGATTTAAGCAGAGTTCAAAAGCCCTTCAGCGGCCAGTAGCATCTGACTTTGAGCCTCAGGGTCTGAGTGAAGCCGCTCGTTGGAACTCCAAGGAAAACCTTCTCGCTGGACCCAGTGAAAATGACCCCAACCTTT
+  partners:
+  - aln: {breakpoint: 23290413, chromosome_name: '22', end_position: 23290413, query_end: 93,
+      query_start: 17, start_position: 23290337, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130854064, chromosome_name: '9', end_position: 130854180, query_end: 210,
+      query_start: 94, start_position: 130854064, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: AJ131466
+- junction_sequence: CTGACATCCGTGGAGCTGCAGATGCTGACCAACTCGTGTGTGAAACTCCAGACTGTCCACAGCATTCCGCTGACCATCAATAAGGAAGAAGCCCTTCAGCGGCCAGTAGCATCTGACTTTGAGCCTCAGGGTCTGAGTGAAGCCGCTCGTTGGAACTCCAAGGAAAACCTTCTCGCTGGACCCAGTGAAAATGACCCCAACCTTTTCGTT
+  partners:
+  - aln: {breakpoint: 23289621, chromosome_name: '22', end_position: 23289621, query_end: 88,
+      query_start: 1, start_position: 23289534, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130854064, chromosome_name: '9', end_position: 130854185, query_end: 210,
+      query_start: 89, start_position: 130854064, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: AJ131467
+- junction_sequence: TCATCGTCCACTCAGCCACTGGATTTAAGCAGAGTTCAAAAGCCCTTCAGCGGCCAGTAGCATCTGACTTTGAGCCTCAGGGTCTGAGTGAAGCCGCTCGTTGGAACTCCAAGGAAAACCTTCTCGCTGGACCCAGTGAA
+  partners:
+  - aln: {breakpoint: 23290413, chromosome_name: '22', end_position: 23290413, query_end: 39,
+      query_start: 1, start_position: 23290375, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130854064, chromosome_name: '9', end_position: 130854164, query_end: 140,
+      query_start: 40, start_position: 130854064, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: M25946
+- junction_sequence: ACAGCAGAGCAGATTTGGCTGCTCTGTCGAGCTGGATGGATACTACTTTTTTTTTCCTTTCCCTCTAAGTGGGGGTCTCCCCCAGCTACTGGAGCTGTCAGAACAAAGAGACAGGGTCTTGCT
+  partners:
+  - aln: {breakpoint: 23290881, chromosome_name: '22', end_position: 23290881, query_end: 105,
+      query_start: 1, start_position: 23290777, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - {disp: 3prime, hgnc_symbol: ABL1}
+  xref: M31759
+- junction_sequence: ATTCCGCTGACCATCAATAAGGAAGATGATGAGTCTCCGGGGCTCTATGGGTTTCTGAATGTCATCGTCCACTCAGCCACTGGATTTAAGCAGAGTTCAAGTGAAAAGCTCCGGGTCTTAGGCTATAATCACAATGGGGA
+  partners:
+  - aln: {breakpoint: 23290415, chromosome_name: '22', end_position: 23290415, query_end: 102,
+      query_start: 24, start_position: 23290337, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130854801, chromosome_name: '9', end_position: 130854840, query_end: 140,
+      query_start: 101, start_position: 130854801, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: S72478
+- junction_sequence: GTTGTCGTGTCCGAGGCCACCATCGTGGGCGTCCGCAAGACCGGGCAGATCTGGCCCAACGATGGCGAGGGCGCCTTCCATGGAGACGCAGGTGAAAAGCTCCGGGTCTTAGGCTATAATCACAATGGGGA
+  partners:
+  - aln: {breakpoint: 23182243, chromosome_name: '22', end_position: 23182243, query_end: 95,
+      query_start: 1, start_position: 23182149, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130854801, chromosome_name: '9', end_position: 130854840, query_end: 131,
+      query_start: 92, start_position: 130854801, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: S72479
+- junction_sequence: CCTCATAAACGCTGGTGTTTGGCTTGTCATAGAAGGGCATTTAAGTGACTTTGCCAAGAGAAACAGTAA
+  partners:
+  - aln: {breakpoint: 23291509, chromosome_name: '22', end_position: 23291509, query_end: 20,
+      query_start: 1, start_position: 23291490, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - {disp: 3prime, hgnc_symbol: ABL1}
+  xref: U19398
+- junction_sequence: TGGGAGCTGGTGAGCTGCCCATAATGACATGATTTGGGATTACTCTTTCAGAGAA
+  partners:
+  - aln: {breakpoint: 23290658, chromosome_name: '22', end_position: 23290658, query_end: 20,
+      query_start: 1, start_position: 23290639, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130852112, chromosome_name: '9', end_position: 130852147, query_end: 55,
+      query_start: 20, start_position: 130852112, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: U19399
+- junction_sequence: CTAAAATTCTTTAAACCCTAAAGCGGATTTACTCTAAGGCAGTTCAGATTTGGTCCCAGCTGAGAATTATAGCCTGGAAATACCAACAGGAAAATCAGTGTCATTTGAAGGACAGTCATCTGTGCAGCCTGTGCATGAAATCATGGGTCTGAATTAGGCCCCATTCAAGATGCGGGGGTGTGGGGTTT
+  partners:
+  - {disp: 5prime, hgnc_symbol: BCR}
+  - aln: {breakpoint: 130830245, chromosome_name: '9', end_position: 130830282, query_end: 57,
+      query_start: 20, start_position: 130830245, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: U19400
+- junction_sequence: GATTAGCCAGGCTAGGCAGTTTTAAATCCTGGCTTTCCCCTTAACTTGGGTGGGATCACACCATTAACCGTGTTACCCCTCTGAAGCTTTGGCTCCCACACCTGTGAGATGTGAATGTTGATAACACACACCCACCTCATAGGATTAATGAGAACATGCCAAGATATAATGCGCTGAAGGTCTTAGCATGCCTGCGCAGAGCCCCAGCAT
+  partners:
+  - {disp: 5prime, hgnc_symbol: BCR}
+  - aln: {breakpoint: 130782506, chromosome_name: '9', end_position: 130782699, query_end: 210,
+      query_start: 17, start_position: 130782506, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: U19403
+- junction_sequence: AATTGCAGGGGTTTGGCAAGCACCTTTTCATATGTTTACTGGCCATTTGGAATATATGTGT
+  partners:
+  - aln: {breakpoint: 23290696, chromosome_name: '22', end_position: 23290696, query_end: 20,
+      query_start: 1, start_position: 23290677, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130730434, chromosome_name: '9', end_position: 130730477, query_end: 61,
+      query_start: 18, start_position: 130730434, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: U19404
+- junction_sequence: ACACAGTGTCCACCGGATGGATTTTATAAGTTGATCCAACCATGGTATGACTTCTGTGGGTAA
+  partners:
+  - aln: {breakpoint: 23290256, chromosome_name: '22', end_position: 23290256, query_end: 20,
+      query_start: 1, start_position: 23290237, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130739679, chromosome_name: '9', end_position: 130739724, query_end: 62,
+      query_start: 17, start_position: 130739679, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: U19408
+- junction_sequence: CAGATCTGGCCCAACGATGGCGAGGGCGCCTTCCATGGAGACGCAGAAGCCCTTCAGCGGCCAGTAGCATCTGACTTTGAGCCTCAGGGTCTGAGTGAAGCC
+  partners:
+  - aln: {breakpoint: 23182239, chromosome_name: '22', end_position: 23182239, query_end: 46,
+      query_start: 1, start_position: 23182194, strand: 1}
+    disp: 5prime
+    hgnc_symbol: BCR
+  - aln: {breakpoint: 130854064, chromosome_name: '9', end_position: 130854119, query_end: 102,
+      query_start: 47, start_position: 130854064, strand: 1}
+    disp: 3prime
+    hgnc_symbol: ABL1
+  xref: X07537

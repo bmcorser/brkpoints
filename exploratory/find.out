@@ -1,0 +1,111 @@
+Found 1374 translocations in /home/matt/work/brkpoints-master/exploratory/allseqs_TICdb_3.3.txt
+18594527
+	gene	disp	query	strand	breakpoint	subject
+	ACSL3	5prime	1-36	1	222900780	2:222900745-222900780
+	ETV1	3prime	35-71	-1	13935898	7:13935862-13935898
+18622426
+	gene	disp	query	strand	breakpoint	subject
+	AFF3	5prime	1-21	-1	100142484	2:100142484-100142504
+	BCL2	3prime	20-50	-1	63318954	18:63318924-63318954
+20526349
+	gene	disp	query	strand	breakpoint	subject
+	BRAF	3prime	18-50	-1	140794467	7:140794435-140794467
+22337624
+	gene	disp	query	strand	breakpoint	subject
+	AHRR	5prime	1-31	1	432525	5:432495-432525
+	NCOA2	3prime	31-63	-1	70141399	8:70141367-70141399
+22337624
+	gene	disp	query	strand	breakpoint	subject
+	AHRR	5prime	14-41	1	432829	5:432802-432829
+22337624
+	gene	disp	query	strand	breakpoint	subject
+	AHRR	5prime	1-26	1	428006	5:427981-428006
+	NCOA2	3prime	27-59	-1	70132002	8:70131970-70132002
+22337624
+	gene	disp	query	strand	breakpoint	subject
+	AHRR	5prime	17-46	1	432488	5:432459-432488
+	NCOA2	3prime	1-20	-1	70138222	8:70138203-70138222
+22334442
+	gene	disp	query	strand	breakpoint	subject
+	ALK	5prime	1-20	-1	29266949	2:29266949-29266968
+	PTPN3	3prime	13-33	-1	109462850	9:109462830-109462850
+11438465
+	gene	disp	query	strand	breakpoint	subject
+	TFE3	3prime	1-27	-1	49038036	X:49038010-49038036
+11438465
+	gene	disp	query	strand	breakpoint	subject
+	TFE3	3prime	1-27	-1	49038409	X:49038383-49038409
+17149613
+	gene	disp	query	strand	breakpoint	subject
+	ASPSCR1	5prime	1-87	1	81996846	17:81996760-81996846
+	TFE3	3prime	88-177	-1	49038114	X:49038025-49038114
+17149613
+	gene	disp	query	strand	breakpoint	subject
+	ASPSCR1	5prime	1-87	1	81996846	17:81996760-81996846
+	TFE3	3prime	88-195	-1	49034251	X:49034144-49034251
+AY034077
+	gene	disp	query	strand	breakpoint	subject
+	ASPSCR1	5prime	1-87	1	81996846	17:81996760-81996846
+	TFE3	3prime	88-195	-1	49034251	X:49034144-49034251
+AY034078
+	gene	disp	query	strand	breakpoint	subject
+	ASPSCR1	5prime	1-87	1	81996846	17:81996760-81996846
+	TFE3	3prime	193-300	-1	49034251	X:49034144-49034251
+17268511
+	gene	disp	query	strand	breakpoint	subject
+	ABL1	3prime	36-57	1	130854064	9:130854064-130854085
+17268511
+	gene	disp	query	strand	breakpoint	subject
+	ABL1	3prime	24-43	1	130853639	9:130853639-130853658
+AH001427
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-90	1	23290428	22:23290339-23290428
+	ABL1	3prime	106-160	1	130854064	9:130854064-130854118
+AJ131466
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	17-93	1	23290413	22:23290337-23290413
+	ABL1	3prime	94-210	1	130854064	9:130854064-130854180
+AJ131467
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-88	1	23289621	22:23289534-23289621
+	ABL1	3prime	89-210	1	130854064	9:130854064-130854185
+M25946
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-39	1	23290413	22:23290375-23290413
+	ABL1	3prime	40-140	1	130854064	9:130854064-130854164
+M31759
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-105	1	23290881	22:23290777-23290881
+S72478
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	24-102	1	23290415	22:23290337-23290415
+	ABL1	3prime	101-140	1	130854801	9:130854801-130854840
+S72479
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-95	1	23182243	22:23182149-23182243
+	ABL1	3prime	92-131	1	130854801	9:130854801-130854840
+U19398
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-20	1	23291509	22:23291490-23291509
+U19399
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-20	1	23290658	22:23290639-23290658
+	ABL1	3prime	20-55	1	130852112	9:130852112-130852147
+U19400
+	gene	disp	query	strand	breakpoint	subject
+	ABL1	3prime	20-57	1	130830245	9:130830245-130830282
+U19403
+	gene	disp	query	strand	breakpoint	subject
+	ABL1	3prime	17-210	1	130782506	9:130782506-130782699
+U19404
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-20	1	23290696	22:23290677-23290696
+	ABL1	3prime	18-61	1	130730434	9:130730434-130730477
+U19408
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-20	1	23290256	22:23290237-23290256
+	ABL1	3prime	17-62	1	130739679	9:130739679-130739724
+X07537
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-46	1	23182239	22:23182194-23182239
+	ABL1	3prime	47-102	1	130854064	9:130854064-130854119

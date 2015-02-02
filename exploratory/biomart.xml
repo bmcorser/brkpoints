@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Query>
+<Query  virtualSchemaName = "default" formatter = "FASTA" header = "0" uniqueRows = "0" count = "" datasetConfigVersion = "0.6" >
+				
+	<Dataset name = "hsapiens_gene_ensembl" interface = "default" >
+		<Filter name = "hgnc_symbol" value = "ACSL3,ETV1,AFF3,BCL2,AGTRAP,BRAF,AHRR,NCOA2,ALK,PTPN3,ASPSCR1,TFE3,BCR,ABL1"/>
+		<Filter name = "chromosome_name" value = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,X,Y"/>
+		<Attribute name = "transcript_exon_intron" />
+		<Attribute name = "ensembl_transcript_id" />
+		<Attribute name = "external_gene_name" />
+		<Attribute name = "chromosome_name" />
+		<Attribute name = "transcript_start" />
+		<Attribute name = "transcript_end" />
+		<Attribute name = "strand" />
+		<Attribute name = "ensembl_exon_id" />
+		<Attribute name = "exon_chrom_start" />
+		<Attribute name = "exon_chrom_end" />
+	</Dataset>
+</Query>
