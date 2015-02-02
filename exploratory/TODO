@@ -1,0 +1,31 @@
+
+At the moment the script is simply aligning the junction
+sequence to the genomic sequences.
+
+Further work is needed to distinguish and deal with the
+following cases:
+
+1. Situations where the alignment breaks close to an 
+exon/intron boundary. This could arise if the junction 
+sequence is in fact a fusion mRNA (no intronic residue),
+In this case the true fragile site or region may be 
+within the 3'/5' flanking introns of the 5'/3' partner 
+genes, and not at all close to the alignment break point.
+In this case the coordinates of the fragile site should 
+be those of the flanking intron, not the alignment 
+break point.
+
+2. Situations in which the alignment breaks well within
+an exon or intron. In this case there is better evidence
+for corresponding of the alignment break point with the
+fragile site. Where there are multiple alignment break
+points close together (e.g. from different translocations
+of the same gene) a fragile region could be defined around
+the cluster.
+
+3. Situations in which the junction sequence aligns to 
+the sequence of only one partner of the translocated 
+pair. Here the fragile region in the sequence of the
+non-aligned partner can't be narrowed down any further
+than the coordinates of the gene itself.
+

@@ -233,6 +233,11 @@ def locate_breakpoints(translocation, transcripts, workdir,
         if not aln:
             continue
 
+        # TODO - add logic here to detect whether the alignment break
+        # is within an intron or close to an exon/intron boundary; 
+        # identify a fragile site region that reflects the associated
+        # uncertainty.
+
         # Establish genomic coordinates of the alignment
         # Start with the aligned coordinates of the exone or intron
         start = aln['subject_start']
