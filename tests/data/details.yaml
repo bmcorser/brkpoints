@@ -1,0 +1,500 @@
+ABL1:
+- chromosome_name: '9'
+  components:
+  - {end_position: 130835525, name: ENSE00001955789, start_position: 130835066, type: exon,
+    uid: '71'}
+  - {end_position: 130854063, name: 'ENST00000318560:1', start_position: 130835526,
+    type: intron, uid: '72'}
+  - {end_position: 130854237, name: ENSE00000984287, start_position: 130854064, type: exon,
+    uid: '73'}
+  - {end_position: 130854800, name: 'ENST00000318560:2', start_position: 130854238,
+    type: intron, uid: '74'}
+  - {end_position: 130855096, name: ENSE00002690665, start_position: 130854801, type: exon,
+    uid: '75'}
+  - {end_position: 130862762, name: 'ENST00000318560:3', start_position: 130855097,
+    type: intron, uid: '76'}
+  - {end_position: 130863035, name: ENSE00002065214, start_position: 130862763, type: exon,
+    uid: '77'}
+  - {end_position: 130872128, name: 'ENST00000318560:4', start_position: 130863036,
+    type: intron, uid: '78'}
+  - {end_position: 130872213, name: ENSE00001726283, start_position: 130872129, type: exon,
+    uid: '79'}
+  - {end_position: 130872859, name: 'ENST00000318560:5', start_position: 130872214,
+    type: intron, uid: '80'}
+  - {end_position: 130873037, name: ENSE00001700841, start_position: 130872860, type: exon,
+    uid: '81'}
+  - {end_position: 130874867, name: 'ENST00000318560:6', start_position: 130873038,
+    type: intron, uid: '82'}
+  - {end_position: 130875052, name: ENSE00001758713, start_position: 130874868, type: exon,
+    uid: '83'}
+  - {end_position: 130878414, name: 'ENST00000318560:7', start_position: 130875053,
+    type: intron, uid: '84'}
+  - {end_position: 130878567, name: ENSE00001741732, start_position: 130878415, type: exon,
+    uid: '85'}
+  - {end_position: 130880067, name: 'ENST00000318560:8', start_position: 130878568,
+    type: intron, uid: '86'}
+  - {end_position: 130880157, name: ENSE00001715343, start_position: 130880068, type: exon,
+    uid: '87'}
+  - {end_position: 130880499, name: 'ENST00000318560:9', start_position: 130880158,
+    type: intron, uid: '88'}
+  - {end_position: 130880664, name: ENSE00001781962, start_position: 130880500, type: exon,
+    uid: '89'}
+  - {end_position: 130883968, name: 'ENST00000318560:10', start_position: 130880665,
+    type: intron, uid: '90'}
+  - {end_position: 130887675, name: ENSE00001457584, start_position: 130883969, type: exon,
+    uid: '91'}
+  end_position: 130887675
+  name: ENST00000318560
+  start_position: 130835066
+  strand: 1
+- chromosome_name: '9'
+  components:
+  - {end_position: 130714455, name: ENSE00001514748, start_position: 130713980, type: exon,
+    uid: '92'}
+  - {end_position: 130854066, name: 'ENST00000393293:1', start_position: 130714456,
+    type: intron, uid: '93'}
+  - {end_position: 130854122, name: ENSE00001751015, start_position: 130854067, type: exon,
+    uid: '94'}
+  end_position: 130854122
+  name: ENST00000393293
+  start_position: 130713980
+  strand: 1
+ACSL3:
+- chromosome_name: '2'
+  components:
+  - {end_position: 222861258, name: ENSE00002301692, start_position: 222860942, type: exon,
+    uid: '161'}
+  - {end_position: 222887829, name: 'ENST00000392066:1', start_position: 222861259,
+    type: intron, uid: '162'}
+  - {end_position: 222887888, name: ENSE00001407067, start_position: 222887830, type: exon,
+    uid: '163'}
+  - {end_position: 222908732, name: 'ENST00000392066:2', start_position: 222887889,
+    type: intron, uid: '164'}
+  - {end_position: 222909150, name: ENSE00000922398, start_position: 222908733, type: exon,
+    uid: '165'}
+  - {end_position: 222916318, name: 'ENST00000392066:3', start_position: 222909151,
+    type: intron, uid: '166'}
+  - {end_position: 222916496, name: ENSE00003463885, start_position: 222916319, type: exon,
+    uid: '167'}
+  - {end_position: 222918045, name: 'ENST00000392066:4', start_position: 222916497,
+    type: intron, uid: '168'}
+  - {end_position: 222918155, name: ENSE00000922400, start_position: 222918046, type: exon,
+    uid: '169'}
+  - {end_position: 222919063, name: 'ENST00000392066:5', start_position: 222918156,
+    type: intron, uid: '170'}
+  - {end_position: 222919202, name: ENSE00000786329, start_position: 222919064, type: exon,
+    uid: '171'}
+  - {end_position: 222921279, name: 'ENST00000392066:6', start_position: 222919203,
+    type: intron, uid: '172'}
+  - {end_position: 222921430, name: ENSE00000786330, start_position: 222921280, type: exon,
+    uid: '173'}
+  - {end_position: 222922707, name: 'ENST00000392066:7', start_position: 222921431,
+    type: intron, uid: '174'}
+  - {end_position: 222922831, name: ENSE00000786331, start_position: 222922708, type: exon,
+    uid: '175'}
+  - {end_position: 222923077, name: 'ENST00000392066:8', start_position: 222922832,
+    type: intron, uid: '176'}
+  - {end_position: 222923149, name: ENSE00000786332, start_position: 222923078, type: exon,
+    uid: '177'}
+  - {end_position: 222924455, name: 'ENST00000392066:9', start_position: 222923150,
+    type: intron, uid: '178'}
+  - {end_position: 222924595, name: ENSE00000922405, start_position: 222924456, type: exon,
+    uid: '179'}
+  - {end_position: 222927016, name: 'ENST00000392066:10', start_position: 222924596,
+    type: intron, uid: '180'}
+  - {end_position: 222927189, name: ENSE00000786334, start_position: 222927017, type: exon,
+    uid: '181'}
+  - {end_position: 222928861, name: 'ENST00000392066:11', start_position: 222927190,
+    type: intron, uid: '182'}
+  - {end_position: 222928936, name: ENSE00000786335, start_position: 222928862, type: exon,
+    uid: '183'}
+  - {end_position: 222930620, name: 'ENST00000392066:12', start_position: 222928937,
+    type: intron, uid: '184'}
+  - {end_position: 222930812, name: ENSE00000922408, start_position: 222930621, type: exon,
+    uid: '185'}
+  - {end_position: 222933165, name: 'ENST00000392066:13', start_position: 222930813,
+    type: intron, uid: '186'}
+  - {end_position: 222933280, name: ENSE00001733043, start_position: 222933166, type: exon,
+    uid: '187'}
+  - {end_position: 222934529, name: 'ENST00000392066:14', start_position: 222933281,
+    type: intron, uid: '188'}
+  - {end_position: 222934687, name: ENSE00003467287, start_position: 222934530, type: exon,
+    uid: '189'}
+  - {end_position: 222941496, name: 'ENST00000392066:15', start_position: 222934688,
+    type: intron, uid: '190'}
+  - {end_position: 222942222, name: ENSE00001914532, start_position: 222941497, type: exon,
+    uid: '191'}
+  end_position: 222942222
+  name: ENST00000392066
+  start_position: 222860942
+  strand: 1
+- chromosome_name: '2'
+  components:
+  - {end_position: 222861258, name: ENSE00001902664, start_position: 222860934, type: exon,
+    uid: '192'}
+  - {end_position: 222887829, name: 'ENST00000357430:1', start_position: 222861259,
+    type: intron, uid: '193'}
+  - {end_position: 222887888, name: ENSE00001407067, start_position: 222887830, type: exon,
+    uid: '194'}
+  - {end_position: 222900673, name: 'ENST00000357430:2', start_position: 222887889,
+    type: intron, uid: '195'}
+  - {end_position: 222900780, name: ENSE00001405381, start_position: 222900674, type: exon,
+    uid: '196'}
+  - {end_position: 222908732, name: 'ENST00000357430:3', start_position: 222900781,
+    type: intron, uid: '197'}
+  - {end_position: 222909150, name: ENSE00000922398, start_position: 222908733, type: exon,
+    uid: '198'}
+  - {end_position: 222916318, name: 'ENST00000357430:4', start_position: 222909151,
+    type: intron, uid: '199'}
+  - {end_position: 222916496, name: ENSE00003463885, start_position: 222916319, type: exon,
+    uid: '200'}
+  - {end_position: 222918045, name: 'ENST00000357430:5', start_position: 222916497,
+    type: intron, uid: '201'}
+  - {end_position: 222918155, name: ENSE00000922400, start_position: 222918046, type: exon,
+    uid: '202'}
+  - {end_position: 222919063, name: 'ENST00000357430:6', start_position: 222918156,
+    type: intron, uid: '203'}
+  - {end_position: 222919202, name: ENSE00000786329, start_position: 222919064, type: exon,
+    uid: '204'}
+  - {end_position: 222921279, name: 'ENST00000357430:7', start_position: 222919203,
+    type: intron, uid: '205'}
+  - {end_position: 222921430, name: ENSE00000786330, start_position: 222921280, type: exon,
+    uid: '206'}
+  - {end_position: 222922707, name: 'ENST00000357430:8', start_position: 222921431,
+    type: intron, uid: '207'}
+  - {end_position: 222922831, name: ENSE00000786331, start_position: 222922708, type: exon,
+    uid: '208'}
+  - {end_position: 222923077, name: 'ENST00000357430:9', start_position: 222922832,
+    type: intron, uid: '209'}
+  - {end_position: 222923149, name: ENSE00000786332, start_position: 222923078, type: exon,
+    uid: '210'}
+  - {end_position: 222924455, name: 'ENST00000357430:10', start_position: 222923150,
+    type: intron, uid: '211'}
+  - {end_position: 222924595, name: ENSE00000922405, start_position: 222924456, type: exon,
+    uid: '212'}
+  - {end_position: 222927016, name: 'ENST00000357430:11', start_position: 222924596,
+    type: intron, uid: '213'}
+  - {end_position: 222927189, name: ENSE00000786334, start_position: 222927017, type: exon,
+    uid: '214'}
+  - {end_position: 222928861, name: 'ENST00000357430:12', start_position: 222927190,
+    type: intron, uid: '215'}
+  - {end_position: 222928936, name: ENSE00000786335, start_position: 222928862, type: exon,
+    uid: '216'}
+  - {end_position: 222930620, name: 'ENST00000357430:13', start_position: 222928937,
+    type: intron, uid: '217'}
+  - {end_position: 222930812, name: ENSE00000922408, start_position: 222930621, type: exon,
+    uid: '218'}
+  - {end_position: 222933165, name: 'ENST00000357430:14', start_position: 222930813,
+    type: intron, uid: '219'}
+  - {end_position: 222933280, name: ENSE00001733043, start_position: 222933166, type: exon,
+    uid: '220'}
+  - {end_position: 222934529, name: 'ENST00000357430:15', start_position: 222933281,
+    type: intron, uid: '221'}
+  - {end_position: 222934687, name: ENSE00003467287, start_position: 222934530, type: exon,
+    uid: '222'}
+  - {end_position: 222941496, name: 'ENST00000357430:16', start_position: 222934688,
+    type: intron, uid: '223'}
+  - {end_position: 222944639, name: ENSE00000922411, start_position: 222941497, type: exon,
+    uid: '224'}
+  end_position: 222944639
+  name: ENST00000357430
+  start_position: 222860934
+  strand: 1
+BCR:
+- chromosome_name: '22'
+  components:
+  - {end_position: 23182239, name: ENSE00001897802, start_position: 23180210, type: exon,
+    uid: '1'}
+  - {end_position: 23253798, name: 'ENST00000305877:1', start_position: 23182240,
+    type: intron, uid: '2'}
+  - {end_position: 23253980, name: ENSE00003561884, start_position: 23253799, type: exon,
+    uid: '3'}
+  - {end_position: 23260949, name: 'ENST00000305877:2', start_position: 23253981,
+    type: intron, uid: '4'}
+  - {end_position: 23261054, name: ENSE00003517761, start_position: 23260950, type: exon,
+    uid: '5'}
+  - {end_position: 23261354, name: 'ENST00000305877:3', start_position: 23261055,
+    type: intron, uid: '6'}
+  - {end_position: 23261540, name: ENSE00001658624, start_position: 23261355, type: exon,
+    uid: '7'}
+  - {end_position: 23268407, name: 'ENST00000305877:4', start_position: 23261541,
+    type: intron, uid: '8'}
+  - {end_position: 23268515, name: ENSE00001154392, start_position: 23268408, type: exon,
+    uid: '9'}
+  - {end_position: 23271531, name: 'ENST00000305877:5', start_position: 23268516,
+    type: intron, uid: '10'}
+  - {end_position: 23271592, name: ENSE00001801315, start_position: 23271532, type: exon,
+    uid: '11'}
+  - {end_position: 23273080, name: 'ENST00000305877:6', start_position: 23271593,
+    type: intron, uid: '12'}
+  - {end_position: 23273133, name: ENSE00001689593, start_position: 23273081, type: exon,
+    uid: '13'}
+  - {end_position: 23273633, name: 'ENST00000305877:7', start_position: 23273134,
+    type: intron, uid: '14'}
+  - {end_position: 23273774, name: ENSE00001755753, start_position: 23273634, type: exon,
+    uid: '15'}
+  - {end_position: 23283976, name: 'ENST00000305877:8', start_position: 23273775,
+    type: intron, uid: '16'}
+  - {end_position: 23284098, name: ENSE00001616269, start_position: 23283977, type: exon,
+    uid: '17'}
+  - {end_position: 23285032, name: 'ENST00000305877:9', start_position: 23284099,
+    type: intron, uid: '18'}
+  - {end_position: 23285201, name: ENSE00003495342, start_position: 23285033, type: exon,
+    uid: '19'}
+  - {end_position: 23287158, name: 'ENST00000305877:10', start_position: 23285202,
+    type: intron, uid: '20'}
+  - {end_position: 23287278, name: ENSE00003484066, start_position: 23287159, type: exon,
+    uid: '21'}
+  - {end_position: 23288096, name: 'ENST00000305877:11', start_position: 23287279,
+    type: intron, uid: '22'}
+  - {end_position: 23288172, name: ENSE00003610811, start_position: 23288097, type: exon,
+    uid: '23'}
+  - {end_position: 23289516, name: 'ENST00000305877:12', start_position: 23288173,
+    type: intron, uid: '24'}
+  - {end_position: 23289621, name: ENSE00001654687, start_position: 23289517, type: exon,
+    uid: '25'}
+  - {end_position: 23290338, name: 'ENST00000305877:13', start_position: 23289622,
+    type: intron, uid: '26'}
+  - {end_position: 23290413, name: ENSE00001781765, start_position: 23290339, type: exon,
+    uid: '27'}
+  - {end_position: 23292540, name: 'ENST00000305877:14', start_position: 23290414,
+    type: intron, uid: '28'}
+  - {end_position: 23292638, name: ENSE00003524316, start_position: 23292541, type: exon,
+    uid: '29'}
+  - {end_position: 23295023, name: 'ENST00000305877:15', start_position: 23292639,
+    type: intron, uid: '30'}
+  - {end_position: 23295155, name: ENSE00003496602, start_position: 23295024, type: exon,
+    uid: '31'}
+  - {end_position: 23309423, name: 'ENST00000305877:16', start_position: 23295156,
+    type: intron, uid: '32'}
+  - {end_position: 23309483, name: ENSE00003648666, start_position: 23309424, type: exon,
+    uid: '33'}
+  - {end_position: 23310323, name: 'ENST00000305877:17', start_position: 23309484,
+    type: intron, uid: '34'}
+  - {end_position: 23310433, name: ENSE00003599139, start_position: 23310324, type: exon,
+    uid: '35'}
+  - {end_position: 23311696, name: 'ENST00000305877:18', start_position: 23310434,
+    type: intron, uid: '36'}
+  - {end_position: 23311836, name: ENSE00003540236, start_position: 23311697, type: exon,
+    uid: '37'}
+  - {end_position: 23312886, name: 'ENST00000305877:19', start_position: 23311837,
+    type: intron, uid: '38'}
+  - {end_position: 23313021, name: ENSE00003562142, start_position: 23312887, type: exon,
+    uid: '39'}
+  - {end_position: 23313967, name: 'ENST00000305877:20', start_position: 23313022,
+    type: intron, uid: '40'}
+  - {end_position: 23314073, name: ENSE00003668832, start_position: 23313968, type: exon,
+    uid: '41'}
+  - {end_position: 23314551, name: 'ENST00000305877:21', start_position: 23314074,
+    type: intron, uid: '42'}
+  - {end_position: 23314714, name: ENSE00003500461, start_position: 23314552, type: exon,
+    uid: '43'}
+  - {end_position: 23315432, name: 'ENST00000305877:22', start_position: 23314715,
+    type: intron, uid: '44'}
+  - {end_position: 23318037, name: ENSE00001753733, start_position: 23315433, type: exon,
+    uid: '45'}
+  end_position: 23318037
+  name: ENST00000305877
+  start_position: 23180210
+  strand: 1
+- chromosome_name: '22'
+  components:
+  - {end_position: 23182239, name: ENSE00001380753, start_position: 23180365, type: exon,
+    uid: '118'}
+  - {end_position: 23253798, name: 'ENST00000359540:1', start_position: 23182240,
+    type: intron, uid: '119'}
+  - {end_position: 23253980, name: ENSE00003561884, start_position: 23253799, type: exon,
+    uid: '120'}
+  - {end_position: 23260949, name: 'ENST00000359540:2', start_position: 23253981,
+    type: intron, uid: '121'}
+  - {end_position: 23261054, name: ENSE00003517761, start_position: 23260950, type: exon,
+    uid: '122'}
+  - {end_position: 23261354, name: 'ENST00000359540:3', start_position: 23261055,
+    type: intron, uid: '123'}
+  - {end_position: 23261540, name: ENSE00001658624, start_position: 23261355, type: exon,
+    uid: '124'}
+  - {end_position: 23268407, name: 'ENST00000359540:4', start_position: 23261541,
+    type: intron, uid: '125'}
+  - {end_position: 23268515, name: ENSE00001154392, start_position: 23268408, type: exon,
+    uid: '126'}
+  - {end_position: 23271531, name: 'ENST00000359540:5', start_position: 23268516,
+    type: intron, uid: '127'}
+  - {end_position: 23271592, name: ENSE00001801315, start_position: 23271532, type: exon,
+    uid: '128'}
+  - {end_position: 23273080, name: 'ENST00000359540:6', start_position: 23271593,
+    type: intron, uid: '129'}
+  - {end_position: 23273133, name: ENSE00001689593, start_position: 23273081, type: exon,
+    uid: '130'}
+  - {end_position: 23273633, name: 'ENST00000359540:7', start_position: 23273134,
+    type: intron, uid: '131'}
+  - {end_position: 23273774, name: ENSE00001755753, start_position: 23273634, type: exon,
+    uid: '132'}
+  - {end_position: 23283976, name: 'ENST00000359540:8', start_position: 23273775,
+    type: intron, uid: '133'}
+  - {end_position: 23284098, name: ENSE00001616269, start_position: 23283977, type: exon,
+    uid: '134'}
+  - {end_position: 23285032, name: 'ENST00000359540:9', start_position: 23284099,
+    type: intron, uid: '135'}
+  - {end_position: 23285201, name: ENSE00003495342, start_position: 23285033, type: exon,
+    uid: '136'}
+  - {end_position: 23287158, name: 'ENST00000359540:10', start_position: 23285202,
+    type: intron, uid: '137'}
+  - {end_position: 23287278, name: ENSE00003484066, start_position: 23287159, type: exon,
+    uid: '138'}
+  - {end_position: 23288096, name: 'ENST00000359540:11', start_position: 23287279,
+    type: intron, uid: '139'}
+  - {end_position: 23288172, name: ENSE00003610811, start_position: 23288097, type: exon,
+    uid: '140'}
+  - {end_position: 23289516, name: 'ENST00000359540:12', start_position: 23288173,
+    type: intron, uid: '141'}
+  - {end_position: 23289621, name: ENSE00001654687, start_position: 23289517, type: exon,
+    uid: '142'}
+  - {end_position: 23290338, name: 'ENST00000359540:13', start_position: 23289622,
+    type: intron, uid: '143'}
+  - {end_position: 23290413, name: ENSE00001781765, start_position: 23290339, type: exon,
+    uid: '144'}
+  - {end_position: 23292540, name: 'ENST00000359540:14', start_position: 23290414,
+    type: intron, uid: '145'}
+  - {end_position: 23292638, name: ENSE00003524316, start_position: 23292541, type: exon,
+    uid: '146'}
+  - {end_position: 23309423, name: 'ENST00000359540:15', start_position: 23292639,
+    type: intron, uid: '147'}
+  - {end_position: 23309483, name: ENSE00003648666, start_position: 23309424, type: exon,
+    uid: '148'}
+  - {end_position: 23310323, name: 'ENST00000359540:16', start_position: 23309484,
+    type: intron, uid: '149'}
+  - {end_position: 23310433, name: ENSE00003599139, start_position: 23310324, type: exon,
+    uid: '150'}
+  - {end_position: 23311696, name: 'ENST00000359540:17', start_position: 23310434,
+    type: intron, uid: '151'}
+  - {end_position: 23311836, name: ENSE00003540236, start_position: 23311697, type: exon,
+    uid: '152'}
+  - {end_position: 23312886, name: 'ENST00000359540:18', start_position: 23311837,
+    type: intron, uid: '153'}
+  - {end_position: 23313021, name: ENSE00003562142, start_position: 23312887, type: exon,
+    uid: '154'}
+  - {end_position: 23313967, name: 'ENST00000359540:19', start_position: 23313022,
+    type: intron, uid: '155'}
+  - {end_position: 23314073, name: ENSE00003668832, start_position: 23313968, type: exon,
+    uid: '156'}
+  - {end_position: 23314551, name: 'ENST00000359540:20', start_position: 23314074,
+    type: intron, uid: '157'}
+  - {end_position: 23314714, name: ENSE00003500461, start_position: 23314552, type: exon,
+    uid: '158'}
+  - {end_position: 23315432, name: 'ENST00000359540:21', start_position: 23314715,
+    type: intron, uid: '159'}
+  - {end_position: 23315950, name: ENSE00002130588, start_position: 23315433, type: exon,
+    uid: '160'}
+  end_position: 23315950
+  name: ENST00000359540
+  start_position: 23180365
+  strand: 1
+ETV1:
+- chromosome_name: '7'
+  components:
+  - {end_position: 13896087, name: ENSE00001085060, start_position: 13891233, type: exon,
+    uid: '46'}
+  - {end_position: 13900737, name: 'ENST00000242066:1', start_position: 13896088,
+    type: intron, uid: '47'}
+  - {end_position: 13900839, name: ENSE00003465794, start_position: 13900738, type: exon,
+    uid: '48'}
+  - {end_position: 13906429, name: 'ENST00000242066:2', start_position: 13900840,
+    type: intron, uid: '49'}
+  - {end_position: 13906599, name: ENSE00003671672, start_position: 13906430, type: exon,
+    uid: '50'}
+  - {end_position: 13909631, name: 'ENST00000242066:3', start_position: 13906600,
+    type: intron, uid: '51'}
+  - {end_position: 13909700, name: ENSE00003687305, start_position: 13909632, type: exon,
+    uid: '52'}
+  - {end_position: 13911238, name: 'ENST00000242066:4', start_position: 13909701,
+    type: intron, uid: '53'}
+  - {end_position: 13911307, name: ENSE00003662173, start_position: 13911239, type: exon,
+    uid: '54'}
+  - {end_position: 13931501, name: 'ENST00000242066:5', start_position: 13911308,
+    type: intron, uid: '55'}
+  - {end_position: 13931749, name: ENSE00003600886, start_position: 13931502, type: exon,
+    uid: '56'}
+  - {end_position: 13935707, name: 'ENST00000242066:6', start_position: 13931750,
+    type: intron, uid: '57'}
+  - {end_position: 13935896, name: ENSE00003595382, start_position: 13935708, type: exon,
+    uid: '58'}
+  - {end_position: 13939116, name: 'ENST00000242066:7', start_position: 13935897,
+    type: intron, uid: '59'}
+  - {end_position: 13939246, name: ENSE00003613528, start_position: 13939117, type: exon,
+    uid: '60'}
+  - {end_position: 13986637, name: 'ENST00000242066:8', start_position: 13939247,
+    type: intron, uid: '61'}
+  - {end_position: 13986685, name: ENSE00003606614, start_position: 13986638, type: exon,
+    uid: '62'}
+  - {end_position: 13988085, name: 'ENST00000242066:9', start_position: 13986686,
+    type: intron, uid: '63'}
+  - {end_position: 13988173, name: ENSE00003694454, start_position: 13988086, type: exon,
+    uid: '64'}
+  - {end_position: 13989007, name: 'ENST00000242066:10', start_position: 13988174,
+    type: intron, uid: '65'}
+  - {end_position: 13989139, name: ENSE00003499933, start_position: 13989008, type: exon,
+    uid: '66'}
+  - {end_position: 13990552, name: 'ENST00000242066:11', start_position: 13989140,
+    type: intron, uid: '67'}
+  - {end_position: 13990702, name: ENSE00001654972, start_position: 13990553, type: exon,
+    uid: '68'}
+  - {end_position: 13991327, name: 'ENST00000242066:12', start_position: 13990703,
+    type: intron, uid: '69'}
+  - {end_position: 13991425, name: ENSE00001789598, start_position: 13991328, type: exon,
+    uid: '70'}
+  end_position: 13991425
+  name: ENST00000242066
+  start_position: 13891233
+  strand: -1
+- chromosome_name: '7'
+  components:
+  - {end_position: 13896087, name: ENSE00001556158, start_position: 13895858, type: exon,
+    uid: '95'}
+  - {end_position: 13900737, name: 'ENST00000403685:1', start_position: 13896088,
+    type: intron, uid: '96'}
+  - {end_position: 13900839, name: ENSE00003465794, start_position: 13900738, type: exon,
+    uid: '97'}
+  - {end_position: 13906429, name: 'ENST00000403685:2', start_position: 13900840,
+    type: intron, uid: '98'}
+  - {end_position: 13906599, name: ENSE00003671672, start_position: 13906430, type: exon,
+    uid: '99'}
+  - {end_position: 13909631, name: 'ENST00000403685:3', start_position: 13906600,
+    type: intron, uid: '100'}
+  - {end_position: 13909700, name: ENSE00003687305, start_position: 13909632, type: exon,
+    uid: '101'}
+  - {end_position: 13911238, name: 'ENST00000403685:4', start_position: 13909701,
+    type: intron, uid: '102'}
+  - {end_position: 13911307, name: ENSE00003662173, start_position: 13911239, type: exon,
+    uid: '103'}
+  - {end_position: 13931501, name: 'ENST00000403685:5', start_position: 13911308,
+    type: intron, uid: '104'}
+  - {end_position: 13931749, name: ENSE00003600886, start_position: 13931502, type: exon,
+    uid: '105'}
+  - {end_position: 13935707, name: 'ENST00000403685:6', start_position: 13931750,
+    type: intron, uid: '106'}
+  - {end_position: 13935896, name: ENSE00003595382, start_position: 13935708, type: exon,
+    uid: '107'}
+  - {end_position: 13939116, name: 'ENST00000403685:7', start_position: 13935897,
+    type: intron, uid: '108'}
+  - {end_position: 13939246, name: ENSE00003613528, start_position: 13939117, type: exon,
+    uid: '109'}
+  - {end_position: 13986637, name: 'ENST00000403685:8', start_position: 13939247,
+    type: intron, uid: '110'}
+  - {end_position: 13986685, name: ENSE00003606614, start_position: 13986638, type: exon,
+    uid: '111'}
+  - {end_position: 13988085, name: 'ENST00000403685:9', start_position: 13986686,
+    type: intron, uid: '112'}
+  - {end_position: 13988173, name: ENSE00003694454, start_position: 13988086, type: exon,
+    uid: '113'}
+  - {end_position: 13989007, name: 'ENST00000403685:10', start_position: 13988174,
+    type: intron, uid: '114'}
+  - {end_position: 13989139, name: ENSE00003499933, start_position: 13989008, type: exon,
+    uid: '115'}
+  - {end_position: 13991121, name: 'ENST00000403685:11', start_position: 13989140,
+    type: intron, uid: '116'}
+  - {end_position: 13991249, name: ENSE00001562389, start_position: 13991122, type: exon,
+    uid: '117'}
+  end_position: 13991249
+  name: ENST00000403685
+  start_position: 13895858
+  strand: -1
