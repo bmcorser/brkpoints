@@ -272,9 +272,7 @@ def main(args=None):
     for arg in args:
         paths.append(os.path.abspath(arg))
 
-    (transcripts_file,
-     sequences_file,
-     details_file) = paths
+    transcripts_file, sequences_file, details_file = paths
 
     if not os.path.isfile(transcripts_file):
         sys.stderr.write("Error - file " + transcripts_file + "\n")
