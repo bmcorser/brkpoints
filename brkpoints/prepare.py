@@ -101,12 +101,8 @@ def split_transcript(fasta_seq, output_fh, transcripts, seq_counter):
     # Deal with the exons, make sure they match up and check
     # for anomalies.
     exon_ids = parts[6].split(';')
-    exon_starts = []
-    for pos in parts[7].split(';'):
-        exon_starts.append(int(pos))
-    exon_ends = []
-    for pos in parts[8].split(';'):
-        exon_ends.append(int(pos))
+    exon_starts = map(int, parts[7].split(';'))
+    exon_ends = map(int, parts[8].split(';'))
     exon_count = len(exon_ids)
     if exon_count != len(exon_starts) or exon_count != len(exon_ends):
         sys.stderr.write("Error - exon mismatches in " +
