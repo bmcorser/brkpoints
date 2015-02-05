@@ -133,10 +133,11 @@ def remove_duplicates(fragile_list, distance):
             gene = name[1]
         elif name[4] == 'b':
             gene = name[2]
-        if by_chr.get(gene + '_' + site[1]):
-            by_chr[gene + '_' + site[1]].append(site)
+        chr_key = gene + '_' + site[1]
+        if by_chr.get(chr_key):
+            by_chr[chr_key].append(site)
         else:
-            by_chr[gene + '_' + site[1]] = [site]
+            by_chr[chr_key] = [site]
     # find duplicates, one chromosome at a time
     dups = []
     for chr in by_chr:
@@ -148,9 +149,12 @@ def remove_duplicates(fragile_list, distance):
             # add to positions list if midpoint of j is less than Xbp from i
             # if duplicates are found they will make identical lists for each
             # site in i
-            positions = [j for j in by_chr[chr] if
-                     (int(i[2])+int(i[3]))/2 >= (int(j[2])+int(j[3]))/2 - X and
-                      (int(i[2])+int(i[3]))/2 <= (int(j[2])+int(j[3]))/2 + X]
+            positions = []
+            for j in by_chr[chr]:
+                i_mid = (int(i[2]) + int(i[3])) / 2
+                j_mid = (int(j[2]) + int(j[3])) / 2
+                if i_mid >= j_mid - X and i_mid <= j_mid + X:
+                    positions.append(j)
             # form one entry from each list covering full range of site
             # k = each site in the duplicated positions list.
             # obtain minimum and maximum genomic coordinates across all
