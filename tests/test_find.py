@@ -87,7 +87,7 @@ def test_main():
     details_file = resource_filename(
         __name__,
         'data/details.yaml')
-    blast_bin_dir = '/usr/bin'
+    blast_bin_dir = os.environ.get('BLAST_BIN_DIR', '/usr/bin')
     # Output files
     output_file = workdir + '/find.yaml'
     # Run main
