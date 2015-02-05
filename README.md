@@ -1,113 +1,200 @@
-# breakage-points
-Breakage Point Homework Assignment
 
-## Objectives
+Breakpoints assignment
+======================
 
-1. Parse the Tab separated file. Each line specifies a "translocation".
+Where is the 'tab separated file' ...? 
 
-2. Figure out the two most likely FragileSites that yielded a given
-Translocation and the coordinates of these Fragile sites. It is not required to do this for the entire dataset.
+Ah - there is a reference to some database ... of translocations? 
 
-3. Serialize the resulting set of Fragile Sites to something easy to parse.
-YAML (via PyYaml) and CSV (document your field names) via the built in
-lib are both good, basic choices.
+Googling suggests TICdb ... and yes there is a tab separated file
+http://www.unav.es/genetica/allseqs_TICdb.txt
 
-## General Advice
+This seems to correspond with the description in the assignment,
+one translocation per line, etc.
 
-There are lots of ways to do this, and I want to see **your**
-approach, but here is a hint from the DB authors:
-'''
-More advanced users might prefer to run customized BLAST searches and
-inspect the output in order to identify the precise breakpoints, which
-is the process we followed in the original BMC Genomics paper. This
-has the advantage that it will uncover microhomologies present at the
-fusion boundary (there are quite a few of those).
-'''
-I want to see your choice and **why**. For example "Used BLAST API
-because I already have a good client for it" or "Wrote out FASTQ file
-and then invoked bwa-mem as a subprocess because it is fast"
+A few experiments:
+BLATing a few of the junction sequences at UCSC
+http://genome.ucsc.edu/cgi-bin/hgBlat
+seems to give the expected thing; hits on different chromosomes, 
+one in the vicinity of what looks like the 5' gene, the other 
+in the vicinity of the 3' matching the rest, matching the
+5' and 3' ends of the junction sequence.
 
-__Bonus Points - de-duplicate the set of resulting FragileSites based
-on their coordinates. That is: if two FragileSites have the same
-genomic coordinates, then they must be the same fragile site__
+But that's not a great approach - could hit lots of other stuff
+that way, pseudogenes; need a map between the gene id and the
+genomic sequence.
 
-Equally, you should demonstrate **how you know** you've found
-reasonable genomic coordinates. This means you should write an
-automated test. For example you could assert that the coordinates
-occur in the stated gene for a sample of results.
+Had a look at the paper:
+Hmm... maybe not a bad idea to download genomic regions for
+each partner gene from ensembl and search the junction 
+sequence in just those areas; 
+this would depend on the gene ids being OK, but they look 
+alright ... a few non HGNC symbols such as 'Ig' in there, but
+the IDs must have been sorted out reasonably well around the 
+time of the original paper ...
 
-It is **not** important to do this for the entire data set. I don't
-actually care about the actual output or even speed. I care about your
-design judgement, if you write clean, PEP08 compliant Python, how you
-tested it to show it both runs and produces reasonably correct output,
-and how you document and comment it so that other team members can
-understand.
+Approach 1
+----------
+Extracted some sequences from ensembl using Biomart 
+http://www.ensembl.org/biomart 
+... obtained genomic sequence for each locus (test set of 
+50 genes)
+... presumably at deskgen there would be a local data 
+repository for this? 
+Or would they use a web API? 
+Whatever, this will do for now.
 
-If you're not up to date on professional Python coding style check out
-some popular libraries, such as SQLAlchemy, or "Code Like a
-Pythonista" 
+Ah...
+looking again at the paper...
+it seems some of the junction sequences are fusion mRNAs and
+others are genomic fusion sequences
+... not at all sure how to tell
+doesn't seem to be any way, looking at the translocations
+file ... length?
 
-See http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
+Looks like the paper authors had a quite a faff for the
+fusion mRNAs - breakpoints can only be isolated to the
+flanking intron ...
 
-Code quality
-([readability](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#coding-style-readability-counts),
-consistency) is not emphasised much in academia, but a lack of it drives
-professional developers **insane** (in a  way that is probably unhealthy).
-Most developers aren't biologists and will have no idea if your implementation
-is biologically accurate (that is your concern!), but they will be able to
-assess its logic and consistency. Issues with code style and readability will
-present a roadblock to that.
+!!!!!!!
+So the 'end of the alignment' doesn't necessarily correspond
+to the fragile site!! Probably doesn't for fusion mRNAs
 
-ALWAYS make sure you use the `if __name__ == '__main__'` idiom in your
-scripts. I can't tell you how many candidates forget this, causing
-their code to execute on import.
+How to detect that? Perhaps it's easy, the breakpoint is 
+near an exon end ... just ignore those? 
 
-There are many tools such as PyLint that will check this for you
-automatically. Most IDEs have this built in. PyCharm has a free
-community edition and a free or steeply discounted Educational edition
-that works well.
+Approach 2
+----------
+The original authors of the paper looked at the exon/intron
+boundaries. We'll possibly need similar to make sense of 
+the alignments...
+So back to Biomart, download the transcripts with the
+exon/intron structure in the header.
 
-## Data Model
-__We shall define a Translocation object as a type of GenomeFeature
-composed of 2 FragileSite objects (which are a subclass of
-GenomeFeature)  such that `fragile_site_a + fragile_site_b` -->
-`translocation_a_b`__
+So a plan
+=========
+Two programs:
+1) to prepare a database of exon and intron sequences,
+based on the ensembl downloaded transcripts file
+2) to blast the junction sequence for each translocation
+agains the exons and introns of the partner genes
 
-A GenomeFeature is an object that has at least
- 1) a name and
- 2) various other attributes and
- 3) coordinates (in a genome)
+Then: if a junction sequence hits introns, but no exons
+the alignment break is possibly a reliable indication of
+a fragile site.
 
-Coordinates are a tuple of `(chromosome, absolute_start, absolute_end,
-strand)`. For example `(1, 123, 456, -1)` would be a Feature that occurs on
-Chromosome `1` from `123` to `456` on the negative strand, such that it's
-sequence is `reverse_compliment(chromosome_one.sequence[123:456])`, that is you
-can use Python string slicing to get the positive strand sequence, but need to
-reverse compliment that sequence if the feature is on the negative strand to
-get its sequence 5' to 3'
+Question in assignment: why blastn?
+----------------------------------
+1) Lots of controls - it can be a bit fiddly getting the 
+alignments for very short sequences
+2) Nice simple output for progamming - the tabular one, 
+no real need for a wrapper
+3) Defensible - good to implement something well
+established that can be explained easily 
+BUT maybe nice alternatives would be
+1) exonerate suite (Birney et al.)
+SW mode may be useful for the short junction sequeces
+nice structured output
+2) fasta
+Also SW mode, quick to set up - no formatted database
+3) Don't know about bwa-mem
 
-## Scaffold
-A basic scaffold for a Python project has been provided in this repository. It
-is recommended that a
-[virtualenv](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#coding-style-readability-counts)
-is used for your development environment. The project can be installed in
-"development" mode by running the following command (whilst the virtualenv is
-activated) in the root of the repository:
+Programs
+========
+1) prepare.py
+mogrify the ensembl transcripts file into introns and exons, 
+output structures in YAML
+2) find.py
+scan each junction sequence, identify the alignment end points 
+(and perhaps do some exon/intron logic to refine)
 
-``` bash
-$ python setup.py develop
-```
+Procedure
+=========
+Selected genes for around 30 translocations from the TICdb 
+file and extracted corresponding transcript sequences from 
+ensembl Biomart, downloaded to:
+transcripts_file: ensembl_GRCh38.fa
+147 transcript sequences (lots of alternative structures)
 
-This will install the module `brkpoints` and any dependencies listed in the
-`setup.py` file, after this the test suite can be run with the following
-command:
+Ran:
+./prepare.py ensembl_GRCh38.fa sequence_file.fa details_file.yaml
 
-``` bash
-$ nosetests
-```
+sequences.fa: 2183 introns/exons
+details.yaml: corresponding coordiante info etc.
 
-To see more verbose output and the output from `print` statements, invoke with the following flags:
+Ran:
+./find.py allseqs_TICdb_3.3.txt sequences.fa details.yaml tmp /usr/bin/ find.yaml > find.out
 
-``` bash
-$ nosetests -v --nocapture
-```
+From find.out:
+1) 
+18594527
+	gene	disp	query	strand	breakpoint	subject
+	ACSL3	5prime	1-36	1	222900780	2:222900745-222900780
+	ETV1	3prime	35-71	-1	13935898	7:13935862-13935898
+Tested with BLAT:
+junction: ctgtgtcacaccaccttagcctcttgatcgaggaagTGCCTATGATCAGAAGCCACAAGTGGGAATGAGGC
+Exact agreement for genomic regions
+The query regions overlap by 2bps...
+-> Consistent
+
+2) 
+17268511
+	gene	disp	query	strand	breakpoint	subject
+	ABL1	3prime	36-57	1	130854064	9:130854064-130854085
+Didn't align the 5'?
+junction aacaaggacaggggtcttcggagtCctgaactcagaagcccttcagcggccagtag
+BLAT aligns to 33-56 9:130854061-130854084 so quite similar
+BLAT also aligns the 3' to 39-56 15:45857800-45857819
+but the 5' is in chromosome 22
+-> Consistent
+
+3)
+AJ131466
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	17-93	1	23290413	22:23290337-23290413
+	ABL1	3prime	94-210	1	130854064	9:130854064-130854180
+nice junction ...
+junction sequence TGACCATCAATAAGGAAGATGATGAGTCTCCGGGGCTCTATGGGTTTCTGAATGTCATCGTCCACTCAGCCACTGGATTTAAGCAGAGTTCAAAAGCCCTTCAGCGGCCAGTAGCATCTGACTTTGAGCCTCAGGGTCTGAGTGAAGCCGCTCGTTGGAACTCCAAGGAAAACCTTCTCGCTGGACCCAGTGAAAATGACCCCAACCTTT
+BLAT agrees exactly at 5'
+It's consistent at 3'' but has a large gap in the alignment
+-> Consistent
+
+4)
+AY034078
+	gene	disp	query	strand	breakpoint	subject
+	ASPSCR1	5prime	1-87	1	81996846	17:81996760-81996846
+	TFE3	3prime	193-300	-1	49034251	X:49034144-49034251
+junction AAGAAGTCCAAGTCGGGCCAGGATCCCCAGCAGGAGCAGGAGCAGGAGCGGGAGCGGGATCCCCAGCAGGAGCAGGAGCGGGAGCGGATTGATGATGTCATTGATGAGATCATCAGCCTGGAGTCCAGTTACAATGATGAAATGCTCAGCTATCTGCCCGGAGGCACCACAGGACTGCAGCTCCCCAGCACGCTGCCTGTGTCAGGGAATCTGCTTGATGTGTACAGTAGTCAAGGCGTGGCCACACCAGCCATCACTGTCAGCAACTCCTGCCCAGCTGAGCTGCCCAACATCAAACGG
+BLAT agrees on chr17
+On chrX it gets  87-300 X:49034144-49038115 
+which looks like the rest of it, but there is a BIG gap 
+in the alignment.
+I wonder if there was another suboptimal alignment for the
+rest of the 3' end.
+Perhaps the -ungapped flag for blastn is a bit strong.
+-> Not inconsistent, but suggests changes to blastn parameters
+
+5) 
+AJ131466
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	17-93	1	23290413	22:23290337-23290413
+	ABL1	3prime	94-210	1	130854064	9:130854064-130854180
+AJ131467
+	gene	disp	query	strand	breakpoint	subject
+	BCR	5prime	1-88	1	23289621	22:23289534-23289621
+	ABL1	3prime	89-210	1	130854064	9:130854064-130854185
+These show the same breakpoint in the 3' gene, but different
+break points in the 5' gene.
+Does 'fragile' correspond to an extended region?
+
+CONCLUSION
+==========
+
+Well looks like the basic program is working OK.
+
+Not sure what to do about the fusion mRNAs. The simple 
+association of a break in the alignment with the location 
+of a fragile site doesn't work for these.
+
+
+
