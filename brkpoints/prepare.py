@@ -133,7 +133,7 @@ def split_transcript(fasta_seq, output_fh, transcripts, seq_counter):
     transcript['components'].sort(key=start_position)
     for i in range(1, exon_count):
         if (transcript['components'][i]['start_position'] <=
-                transcript['components'][i-1]['end_position']):
+                transcript['components'][i - 1]['end_position']):
             sys.stderr.write("Error - exon overlap\n")
             sys.exit(1)
 
