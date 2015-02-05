@@ -16,7 +16,7 @@ from Bio.Blast import NCBIXML
 
 ####################################################
 # where the local biodata lives on the host system
-BIODATA = os.environ('BIODATA', '/opt/biodata')
+BIODATA = os.environ.get('BIODATA', '/opt/biodata')
 DEFAULT_DB = '/usr/local/share/Blast/db/human_genomic'
 
 
