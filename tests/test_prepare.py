@@ -8,19 +8,6 @@ import yaml
 import tempfile
 
 
-OUTER_TODAY = None
-
-
-def setup():
-    'Setup function that runs before every test'
-    print "SETUP!"
-
-
-def teardown():
-    'Teardown function that runs after every test'
-    print "TEAR DOWN!"
-
-
 def test_start_position():
     'Test prepare.start_position'
     test_value = 99
@@ -29,7 +16,7 @@ def test_start_position():
 
 
 def compare_transcript_details(obtained, expected):
-    """ Compare transcript objects """
+    'Compare transcript objects'
     for key in expected:
         assert_true(key in obtained)
         if key != 'components':

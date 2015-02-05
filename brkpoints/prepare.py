@@ -57,7 +57,7 @@ def split_transcript(fasta_seq, output_fh, transcripts, seq_counter):
 
     fasta_seq
     ---------
-    The input fasta_seq object (keys 'header', 'sequence') holds
+    The input fasta_seq object (keys 'header', 'body') holds
     the structure and (unspliced) sequence of an ensembl modelled
     transcript.
 

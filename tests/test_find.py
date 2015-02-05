@@ -8,19 +8,6 @@ import yaml
 import tempfile
 
 
-OUTER_TODAY = None
-
-
-def setup():
-    'Setup function that runs before every test'
-    print "SETUP!"
-
-
-def teardown():
-    'Teardown function that runs after every test'
-    print "TEAR DOWN!"
-
-
 def compare_translocations(obtained, expected):
     """ Compare translocation objects, with or without alignment """
     for key in expected:
